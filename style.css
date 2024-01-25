@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #2d545e;
+    font-family: 'Poppins', sans-serif;
+}
+.main{
+    position: relative;
+    top:200px;
+    background-color: #2d545e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    
+}
+.container{
+    display: grid;
+    background-color: #e1b382;
+    border-radius: 10px;
+    box-shadow: -1px -1px 4px 4px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 10px;
+}
+
+.todo-list{
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 10px;
+}
+
+.btn{
+    height: 30px;
+    margin-top: 5px;
+    cursor: pointer;
+    background-color: maroon;
+    border-radius: 4px;
+    color:white;
+}
+.btn-add{
+    background-color:lightgreen;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+@media screen and (width<=523px)  {
+    
+      .grid-container{
+        display: grid;
+        grid-template-columns: 400px;
+       row-gap: 10px;
+        padding: 10px;
+    }
+    
+    .todo-list{
+        margin-top: 10px;
+        display: grid;
+        grid-template-columns: 100px;
+        justify-content: center;
+        row-gap: 3px;
+    }
+   
+   
+    
+}
+
+@media screen and (width<=429px)  {
+    .grid-container{
+      display: grid;
+      grid-template-columns: 300px;
+      column-gap: 10px;
+      padding: 10px;
+  }
+  
+
+  
+}
+@media screen and (width<=335px)  {
+    .grid-container{
+      display: grid;
+      grid-template-columns: 250px;
+      column-gap: 10px;
+      padding: 10px;
+  }
+  
+ 
+  
+}
+@media screen and (width<=285px)  {
+    .grid-container{
+      display: grid;
+      grid-template-columns: 200px;
+      column-gap: 10px;
+      padding: 10px;
+  }
+  
+
+  
+}
+@media screen and (width<=239px)  {
+    .grid-container{
+      display: grid;
+      grid-template-columns: 150px;
+      column-gap: 10px;
+      padding: 10px;
+  }
+  @media screen and (width<=185px)  {
+    .grid-container{
+      display: grid;
+      grid-template-columns: 100px;
+      column-gap: 10px;
+      padding: 10px;
+  }
+}
+}
